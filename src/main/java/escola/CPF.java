@@ -11,5 +11,9 @@ public class CPF {
 		
 		this.numeracao = numeracao;
 	}
+
+	public String getNumeracao() {
+		return numeracao;
+	}
 	
 }
