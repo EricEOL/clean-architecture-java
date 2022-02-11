@@ -1,4 +1,4 @@
-package escola;
+package br.com.alura.escola.domain.aluno;
 
 public class FabricaDeAluno {
 
@@ -14,14 +14,18 @@ public class FabricaDeAluno {
 		return this;
 	}
 	
+	public Aluno criar() {
+		return this.aluno;
+	}
+	
 	public static void main(String[] args) {
 		FabricaDeAluno fabrica = new FabricaDeAluno();
 		
-		fabrica
-		.comNomeCPFEmail("Rebecca", "11111111111", "rebecca@gmail.com.br")
-		.comTelefone("21", "989832982");
-		
-		System.out.println(fabrica);
+		Aluno aluno = fabrica
+				.comNomeCPFEmail("Rebecca", "11111111111", "rebecca@gmail.com.br")
+				.comTelefone("21", "989832982")
+				.comTelefone("22", "982777484")
+				.criar();
 	}
 	
 }
